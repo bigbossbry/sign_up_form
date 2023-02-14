@@ -30,11 +30,79 @@
             Form container
             and then something like the bottom part
             -->
-            <div class="header">
-                
+            <div class="right-aligner">
+                <div class="header">
+                    This is not a real online service! This is just a part of my personal portfolio! Now, this sentence is supposed to wrap on this part. <br> This sentence should come on a new line. <br> And this sign up now sentence should start on the next line!
+                    <br>
+                    <br><p>You <em>know</em> you want to!</p>
+                </div>
+                <div class="bx-form">
+                    <form id="theForm">
+                        <label for="fN">
+                            First Name
+                            <input type="text" name="fName" id="fN">
+                        </label>
+                        <label for="lN">
+                            Last Name
+                            <input type="text" name="lName" id="lN">
+                        </label>
+                        <label for="email">
+                            Email
+                            <input type="email" name="email" id="email">
+                        </label>
+                        <label for="phone">
+                            Phone
+                            <input type="tel" name="phone" id="phone">
+                        </label>
+                        <label for="password">
+                            Password
+                            <input type="password" name="password" id="password">
+                        </label>
+                        <label for="cPassword">
+                            Confirm Password
+                            <input type="password" name="cPassword" id="cPassword">
+                        </label>
+
+                        <fieldset>
+                            <legend>Just another Fieldset</legend>
+                            <label for="c1">
+                                This is
+                                <input type="radio" name="choices" id="c1">
+                            </label>
+                            <label for="c2">
+                                Just here to
+                                <input type="radio" name="choices" id="c2">
+                            </label>
+                            <label for="c3">
+                                Showcase my skills
+                                <input type="radio" name="choices" id="c3">
+                            </label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Are you impressed yet?</legend>
+                            <label for="yes">
+                                Yes
+                                <input type="radio" name="yesno" id="yes">
+                            </label>
+                            <label for="no">
+                                No
+                                <input type="radio" name="yesno" id="no">
+                            </label>
+                            <label for="better">
+                                I can do better
+                                <input type="radio" name="yesno" id="better">
+                            </label>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="bx-space">
+                    <div class="bx-space-container">
+                        <button type="submit" form="theForm">Create Account</button>
+                        <p>Already have an account? <a href="placeholder-link">Log In</a></p>
+                    </div>
+                </div>
             </div>
-            <div class="bx-form"></div>
-            <div class="bx-space"></div>
         </div>
     </div>
 </body>
