@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap);
+
 *{
     box-sizing: border-box;
 }
@@ -33,14 +35,14 @@ body {
     justify-content: space-between;
     background-image: url(./misc/halie-west-25xggax4bSA-unsplash.jpg);
     background-size: cover;
-    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 20vw;
 }
 
 .main-part {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     flex-grow: 2;
+    background-color: #eff3f3;
+    display: flex;
 }
 
 
@@ -87,14 +89,39 @@ body {
     text-align: center;
 }
 
+.right-aligner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2vw;
+    margin-right: 5vw;
+    flex-grow: 1;
+}
+
 .header, .bx-form, .bx-space {
     border: 2px dashed grey;
+    font-family: Roboto, sans-serif;
 }
 
+.header, .bx-space{
+    max-height: 33.3%;
+}
 .header {
     flex-grow: 2;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    line-height: 1.5;
+    font-size: large;
+    
+
 }
 
+.header p {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
 .bx-form {
     flex-grow: 1;
 }
