@@ -1,0 +1,60 @@
+.main-container{
+    border: 1px solid black;
+    width: 800px;
+    height: 800px;
+}
+
+.main-container {
+    display: flex;
+}
+
+.sidebar, .main-part {
+    border: 2px dashed rebeccapurple;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    
+}
+
+.main-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-grow: 2;
+}
+
+
+.logo, .footer-credits{
+    border: 2px dashed green;
+    width: auto;
+}
+
+.logo {
+    height: 15em;
+    margin-top: 5em;
+}
+
+.footer-credits {
+    height: 1em;
+    margin-bottom: 1em;
+}
+
+.header, .bx-form, .bx-space {
+    border: 2px dashed grey;
+}
+
+.header {
+    flex-grow: 2;
+}
+
+.bx-form {
+    flex-grow: 1;
+}
+
+.bx-space {
+    flex-grow: 2;
+}
