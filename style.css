@@ -188,7 +188,7 @@ div h1 {
     visibility: hidden;
 }
 
-.margin>span, label>span{
+.margin>span, label>span, .style2 legend>span{
     color: red;
 }
 
@@ -238,9 +238,9 @@ div h1 {
     left: 0px;
     height: 100%;
     width: 100%;
-    opacity: 0.5;
+    opacity: 0.6;
     box-shadow: inset 0px 3px 5px rgb(0, 0, 0 / 14%);
-    background-color: gray;
+    background-color: yellowgreen;
 }
 
 .style2 input[type="radio"] {
