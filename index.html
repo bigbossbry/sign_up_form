@@ -13,14 +13,14 @@
         <div class="sidebar">
             <!-- the background for this div must be an image -->
             <div class="logo">
-                <div class="aligner">
+                <div class="left"> <!--This div is used to align all of the sections vertically-->
                     <img src="./misc/odin-lined.png" alt="Odin_logo" class="img-logo">
                     <span></span>
                     <!-- this will contain the logo -->
                 </div>
             </div>
             <div class="footer-credits">
-                Photo by Halie West on Upsplash
+                Photo by <a href="https://unsplash.com/@spensersembrat">Spenser Sembrat</a> on <a href="https://unsplash.com/">Unsplash</a>
                 <!-- this will contain the image credits -->
             </div>
         </div>
@@ -30,38 +30,58 @@
             Form container
             and then something like the bottom part
             -->
-            <div class="right-aligner">
+            <div class="right"> <!--This div is used to align all of the sections vertically-->
                 <div class="header">
-                    This is not a real online service! This is just a part of my personal portfolio! Now, this sentence is supposed to wrap on this part. <br> This sentence should come on a new line. <br> And this sign up now sentence should start on the next line!
+                    This page is not a real online service! <br> It's all just a part of my personal portfolio! <br> And this sentence should start on a new line.
                     <br>
                     <br><p>You <em>know</em> you want to!</p>
                 </div>
                 <div class="bx-form">
-                    <form id="theForm">
-                        <label for="fN">
-                            First Name
-                            <input type="text" name="fName" id="fN">
-                        </label>
-                        <label for="lN">
-                            Last Name
-                            <input type="text" name="lName" id="lN">
-                        </label>
-                        <label for="email">
-                            Email
-                            <input type="email" name="email" id="email">
-                        </label>
-                        <label for="phone">
-                            Phone
-                            <input type="tel" name="phone" id="phone">
-                        </label>
-                        <label for="password">
-                            Password
-                            <input type="password" name="password" id="password">
-                        </label>
-                        <label for="cPassword">
-                            Confirm Password
-                            <input type="password" name="cPassword" id="cPassword">
-                        </label>
+                <div><h1>Let's do this!</h1></div>
+                <div class="margin">Required fields are marked with a <span>*</span></div>
+                    <form id="myForm" action="#">
+                        <div class="textInputs">
+                            <div class="input">
+                                <label for="fN">FIRST NAME <span>*</span></label>
+                                <input type="text" name="fName" id="fN" required minlength="1">
+                                <div class="error">Placeholder error</div>
+                            </div>
+                            <div class="input">
+                                <label for="lN">LAST NAME <span>*</span></label>
+                                <input type="text" name="lName" id="lN" required minlength="1">
+                                <div class="error">Placeholder error</div>
+                            </div>
+                            <div class="input">
+                                <label for="email">EMAIL <span>*</span></label>
+                                <input type="email" name="email" id="email" required>
+                                <div class="error">Must be a valid email address</div>
+                            </div>
+                            <div class="input">
+                                <label for="phone">PHONE</label>
+                                <input type="tel" name="phone" id="phone">
+                                <div class="error">Placeholder error</div>
+                            </div>
+                            <div class="input">
+                                <label for="password">PASSWORD <span>*</span></label>
+                                <input type="password" name="password" id="password" required>
+                                <div class="error">
+                                    <span>
+                                        <ul>
+                                            <li>Must contain at least 1 uppercase letter</li>
+                                            <li>Must contain at least 1 lowercase letter</li>
+                                            <li>Must contain at least 1 number letter</li>
+                                            <li>Minimum of 6 characters</li>
+                                            <li>Maximum of 15 characters</li>
+                                        </ul>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <label for="cPassword">CONFIRM PASSWORD <span>*</span></label>
+                                <input type="password" name="cPassword" id="cPassword" required>
+                                <div class="error">Passwords do not match</div>
+                            </div>
+                        </div>
 
                         <fieldset>
                             <legend>Just another Fieldset</legend>
@@ -79,21 +99,24 @@
                             </label>
                         </fieldset>
 
-                        <fieldset>
+                        <fieldset class="style2">
                             <legend>Are you impressed yet?</legend>
-                            <label for="yes">
-                                Yes
+                            <div>
                                 <input type="radio" name="yesno" id="yes">
-                            </label>
-                            <label for="no">
-                                No
+                                <label for="yes">Yes</label>
+                            </div>
+                            <div>
                                 <input type="radio" name="yesno" id="no">
-                            </label>
-                            <label for="better">
-                                I can do better
+                                <label for="no">No</label>
+                            </div>
+                            <div>
                                 <input type="radio" name="yesno" id="better">
-                            </label>
+                                <label for="better">I can do better</label>
+                            </div>
                         </fieldset>
+
+                        <label for="myCheckbox">Sign up for our newsletter?</label>
+                        <input type="checkbox" name="myCheckbox" id="myCheckbox" default>
                     </form>
                 </div>
                 <div class="bx-space">
