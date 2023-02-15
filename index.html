@@ -85,24 +85,18 @@
 
                         <fieldset>
                             <legend>Just another Fieldset</legend>
-                            <label for="c1">
-                                This is
-                                <input type="radio" name="choices" id="c1">
-                            </label>
-                            <label for="c2">
-                                Just here to
-                                <input type="radio" name="choices" id="c2">
-                            </label>
-                            <label for="c3">
-                                Showcase my skills
-                                <input type="radio" name="choices" id="c3">
-                            </label>
+                            <input type="radio" name="choices" id="c1">
+                            <label for="c1">This is</label>
+                            <input type="radio" name="choices" id="c2">
+                            <label for="c2">Just here to</label>
+                            <input type="radio" name="choices" id="c3">
+                            <label for="c3">Showcase my skills</label>
                         </fieldset>
 
                         <fieldset class="style2">
-                            <legend>Are you impressed yet?</legend>
+                            <legend>Are you impressed yet? <span>*</span></legend>
                             <div>
-                                <input type="radio" name="yesno" id="yes">
+                                <input type="radio" name="yesno" id="yes" checked required>
                                 <label for="yes">Yes</label>
                             </div>
                             <div>
@@ -116,7 +110,7 @@
                         </fieldset>
 
                         <label for="myCheckbox">Sign up for our newsletter?</label>
-                        <input type="checkbox" name="myCheckbox" id="myCheckbox" default>
+                        <input type="checkbox" name="myCheckbox" id="myCheckbox" checked>
                     </form>
                 </div>
                 <div class="bx-space">
