@@ -221,7 +221,6 @@ div h1 {
     text-align: center;
     position: relative;
     height: 2rem;
-    padding-top: 0.4rem;
     /* box-shadow: 0px 0px 2px black; */
 }
 
@@ -229,21 +228,32 @@ div h1 {
     height: 100%;
     width: 100%;
     display: block;
+    padding-top: 0.4rem;
 }
 
-.style2 input:checked + label::after {
-    content: "";
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 100%;
-    width: 100%;
-    opacity: 0.6;
-    box-shadow: inset 0px 3px 5px rgb(0, 0, 0 / 14%);
-    background-color: yellowgreen;
+.style2 input:checked + label {
+    /* box-shadow: inset 0px 3px 5px rgb(0, 0, 0 / 14%); */
+    background-color: #9faf85;
 }
+
 
 .style2 input[type="radio"] {
     visibility: hidden;
     position: absolute;
+}
+
+.style1 div {
+    width: 33.3%;
+}
+
+button {
+    border: none;
+    background: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    padding: 10px 15px 10px 15px;
+    margin-top: 20px;
+    cursor: pointer;
+    background-color: #9faf85;
+
 }
