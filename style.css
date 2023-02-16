@@ -51,6 +51,8 @@ body {
     /* background-color: #eff3f3; */
     display: flex;
     max-width: 30vw;
+    overflow: auto;
+    flex-wrap: wrap;
 }
 
 
