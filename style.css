@@ -169,6 +169,12 @@ fieldset {
     color: inherit;
 }
 
+.main-part a {
+    color: #9faf85;
+    font-weight: bold;
+    text-decoration: none;
+}
+
 .input .error {
     font-size: x-small;
     color: red;
@@ -256,4 +262,8 @@ button {
     cursor: pointer;
     background-color: #9faf85;
 
+}
+
+fieldset.style1 {
+    display: flex;
 }
